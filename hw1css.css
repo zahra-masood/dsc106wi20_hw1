@@ -3,7 +3,8 @@ body, h5, th {
 }
 
 h1, h3{
-    font-family: 'Paytone One';font-size: 18px;
+    font-family: 'Paytone One', sans-serif;
+    
 }
 
 .grid-container {
@@ -11,32 +12,40 @@ h1, h3{
     grid-template-columns: 30% 30% 37% ;
     grid-gap: 10px;
     padding: 10px;
-  }
-  .grid-item1 {
+}
+.grid-item1 {
       grid-column: 1 / span 1;
       text-align: center;
       padding: 10px 0;
       font-size: 30px;
-  }
+}
 
-  .grid-item2 {
+.grid-item2 {
       grid-column: 2 / span 1;
       text-align: center;
       padding: 10px 0;
       font-size: 30px;
-  }
+}
 
-  .grid-item3 {
+.grid-item3 {
       grid-column: 3 / span 1;
       text-align: center;
       padding: 10px 0;
       font-size: 18px;
-  }
+}
 
-  .tabletwo, .tabletwo th, .tabletwo td {
+.tabletwo, .tabletwo th, .tabletwo td {
     border: 1px solid black;
-  }
-  fieldset {
+}
+fieldset {
     border: 0;
+}
+
+th.gray {
+    background-color: lightgray;
+}
+
+table, th, td{
+    text-align: center;
 }
 

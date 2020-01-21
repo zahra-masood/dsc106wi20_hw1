@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <main>
-    <head>
-        <header>
-            <meta charset ="UTF-8" /> 
-            <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-            <meta hhtp-equiv="X-UA-Compatible" content="ie=edge" />
-            <title>D&W Dashboard</title>
-            <h1>
-                <figure> 
-                    <image src ="\images\dw-logo.png" height="80" width="120" alt="Logo"/> Global Dashboard
-                </figure>
-            </h1>
-        </header>
+    <head>    
+            <title>D&W Dashboard</title>
+            <meta charset ="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />  
+            <link rel="stylesheet" type = "text/css" href="hw1css.css">
+            <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+
     </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
 
     <body>
-        <h2>
+        <header>
+            <h1>
+                
+                    <img src ="\images\dw-logo.png" height="80" width="120" alt="Logo"/> Global Dashboard
+                
+            </h1>
+        </header>
+        <main>
+        <h3>
         <table id = DingusWidSales style="width:100%" cellspacing="15">
             <thead>
                 <tr>
-                    <th>Dingus</th>
-                    <th>Widget</th>
-                    <th>Sales</th>
+                    <th><h3>Dingus</h3></th>
+                    <th><h3>Widget</h3></th>
+                    <th><h3>Sales </h3></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td style = "text-align:center"> <font color = "blue" size = 6pt> 0 </font></td>
-                    <td style = "text-align:center"> <font color = "blue" size = 6pt> 0 </font></td>
-                    <td style = "text-align:center"> <font color = "green" size = 6pt>$</font> <font color = "blue" size = 6pt>0.00</font> </td>
+                    <td style = "text-align:center; color: blue"> 0 </td>
+                    <td style = "text-align:center; color: blue"> 0 </td>
+                    <td style = "text-align:center; color:blue"> <span style="color: green">$</span> 0.00  </td>
                 </tr>
             </tbody>
         </table>
-        </h2>
+        </h3>
         <hr>
         <style>
             .grid-container {
@@ -93,20 +95,14 @@
             </div>   
         </div>   
         <hr>
-        <style>
-            .tabletwo, .tabletwo th, .tabletwo td {
-            border: 1px solid black;
-        }
-        </style>
-        <h3>
             <table id = "tabletwo" style="width:100%" class = "tabletwo">
                 <thead>
                     <caption> Order History </caption>
                     <colgroup>
-                        <col span = '1' style = 'background-color: lightgrey'>
+                        <col span = '1' style = 'background-color: lightgray;'>
                     </colgroup>
                     <tr>
-                        <th rowspan = "2"> ID#</th>
+                        <th rowspan = "2" class = "gray"> ID#</th>
                         <th rowspan = "2"> Date</th>
                         <th colspan = "2"> Quantity</th>
                         <th rowspan = "2"> Total</th>
@@ -119,7 +115,7 @@
 
                 <tbody>
                     <tr>
-                        <td style = "text-align:center">1221</td>
+                        <td style = "text-align:center" class = "gray">1221</td>
                         <td style = "text-align:center">12/12/19</td>
                         <td style = "text-align:center">4</td>
                         <td style = "text-align:center">10</td>
@@ -127,7 +123,7 @@
 
                     </tr>
                     <tr>
-                        <td style = "text-align:center">1222</td>
+                        <td style = "text-align:center" class = "gray">1222</td>
                         <td style = "text-align:center">12/21/19</td>
                         <td style = "text-align:center">1</td>
                         <td style = "text-align:center">2</td>
@@ -135,7 +131,7 @@
                     </tr>
 
                     <tr>
-                        <td style = "text-align:center">1223</td>
+                        <td style = "text-align:center" class = "gray">1223</td>
                         <td style = "text-align:center">1/15/20</td>
                         <td style = "text-align:center">14</td>
                         <td style = "text-align:center">19</td>
@@ -150,11 +146,9 @@
                 </tfoot>
     
             </table>
-        </h3>
         
         <details>
             <summary>Order Form</summary>
-            <p style = "margin-left:90px";></p>
             <dialog open>
                 <p id = "message"></p>
                 <script> 
@@ -164,71 +158,58 @@
             <hr>
             <form>
                 <fieldset>
-                     <h5>
-                        Dingus:
-                        <input type="text" name="Dingus" value = "0"> @ <input type="text" name="lastname" value = "14.25"> = $<input type="float" name="price" value = "0.00">
-                    </h5>
-                    <h5>
-                        Widget:
-                        <input type="text" name="Widget" value = "0"> @ <input type="text" name="lastname" value = "9.99"> = $<input type="float" name="price" value = "0.00">
-                    </h5>
-                    <h5>
-                        Total $
-                        <input type="text" name="Total" value = "0.00"> 
-                    </h5>
-                    <h5>
-                        Shipping
+                    
+                        <label>Dingus:</label>
+                        <input type="text" name="Dingus" value = "0"> @ <input type="text" name="lastname" value = "14.25"> = $<input type="number" name="price" value = "0.00">
+                        <br>
+                    
+                       <label> Widget: </label>
+                        <input type="text" name="Widget" value = "0"> @ <input type="text" name="lastname" value = "9.99"> = $<input type="number" name="price" value = "0.00">
+                
+                        <br>
+                        <label>Shipping</label>
                         <input list="Shipping" name="Shipping"> 
                         <datalist id = "Shipping">
                             <option value = "London">
                             <option value = "San Francisco">
                             <option value = "Los Angeles">
                         </datalist>
-                    </h5>
-                    <h5>
-                        Payment
+                
+                        <br>
+                        <label>Payment</label>
                         <select name = "Payment" size="4" multiple> 
                             <option value="visa">Visa</option>
                             <option value="mastercard">MasterCard</option>
                             <option value="paypal">PayPal</option>
                         </select>
-                    </h5>
-                    <h5>
-                        Comment
+                    
+                        <br>
+                        <label>Comment</label>
                         <textarea name="message" rows="3" cols="15"> </textarea>
-                    </h5>
-                    <h5>
+                
+                        <br>
                         <input type="button" value="Cancel"> <input type="button" value = "Order">
-                    </h5>
                 </fieldset>
             </form>
         </details>
-        <h5>
+        <div>
             Disclaimer: This page is provided <i>as is</i>
-        </h5>
-        <h5>
+
             Notes
             <ul>
                 <li>Your order will leave warehouse in 3-5 days </li>
                 <li>If you have any questions please contact us at 123456789</li>
                 <li>D&W is a proud supporter of the <i>Stuart Collection</i></li>
             </ul>
-        </h5>
+        </div>
+        </main>
+        <footer>
+            <address>
+                <em> 9500 Gilman Dr, La Jolla, CA 92093 </em>
+            </address>
+        </footer>
     </body>
-    <style>
-        body {
-            font-family: 'Montserrat';font-size: 20px;
-        }
-        fieldset {
-            border: 0;
-        }
-    </style>
-    <footer>
-        <address>
-            <em> 9500 Gilman Dr, La Jolla, CA 92093 </em>
-        </address>
-    </footer>
-    </main>
+    
 
 </html>
 
