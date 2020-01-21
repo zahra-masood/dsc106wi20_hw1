@@ -36,4 +36,7 @@ h1, h3{
   .tabletwo, .tabletwo th, .tabletwo td {
     border: 1px solid black;
   }
+  fieldset {
+    border: 0;
+}
 
