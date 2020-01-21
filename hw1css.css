@@ -1,0 +1,39 @@
+body, h5, th {
+    font-family: 'Montserrat';font-size: 18px;
+}
+
+h1, h3{
+    font-family: 'Paytone One';font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 37% ;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .grid-item1 {
+      grid-column: 1 / span 1;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 30px;
+  }
+
+  .grid-item2 {
+      grid-column: 2 / span 1;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 30px;
+  }
+
+  .grid-item3 {
+      grid-column: 3 / span 1;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+  }
+
+  .tabletwo, .tabletwo th, .tabletwo td {
+    border: 1px solid black;
+  }
+
